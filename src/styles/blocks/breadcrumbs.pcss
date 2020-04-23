@@ -1,0 +1,23 @@
+.breadcrumbs {
+  &__list {
+    font-size: 14px;
+    display: flex;
+  }
+  &__item:after {
+    content: "/ ";
+    vertical-align: middle;
+    margin: 0 5px;
+  }
+  &__item:last-child:after {
+    display: none;
+  }
+  &__link {
+    text-decoration: underline;
+    color: #999999;
+  }
+  &__link--unactive {
+    font-weight: bold;
+    cursor: default;
+  }
+}
+  

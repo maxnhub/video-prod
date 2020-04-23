@@ -1,0 +1,126 @@
+include ./mixins.pug
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(href="https://img.icons8.com/dusk/64/000000/video-trimming.png" rel="shortcut icon" type="image/x-icon")
+    title Video Production | Service page
+  body
+    .wrapper
+      .wrapper__content
+        section.section.section--header
+          header.header
+            .container.container--header
+              a.logo(href="main.html")
+                img.logo-img(src="src/images/content/logo.png" alt="Лого")
+              nav.menu
+                ul.menu__list.menu__list--horizontal
+                  li.menu__item
+                    a.menu__link Главная
+                  li.menu__item
+                    a.menu__link(href="service.html") Услуги
+                  li.menu__item
+                    a.menu__link(href="reviews.html") Отзывы
+              address.contacts
+                a.contacts__tel(href="tel:+88007003030") 8 (800) 700 30 30
+                .contacts__dropdown
+                  a.contacts__link График работы
+                  .contacts__menu
+                    .contacts__list
+                      .contacts__item.contacts__item--bold пн-вс: 09:00-20:00
+                      .contacts__item обед: 14:00-14:30
+          .container            
+            h1.service__title Услуги
+            .breadcrumbs
+              ul.breadcrumbs__list
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="main.html") Главная
+                li.breadcrumbs__item
+                  a.breadcrumbs__link.breadcrumbs__link--unactive(href="#") Услуги
+        section.section.section--service
+          .container
+            ul.service__list
+              li.service__item
+                .service__item-visual.service__item-visual--girls
+                  //- +image('content/girls.jpg', 'service__pic')
+                .service__item-desc
+                  h3.service__item-desc-title Съемки клипа
+                  p.service__item-desc-text Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                  button.info-button(type="button") Подробнее
+              li.service__item
+                .service__item-visual.service__item-visual--engineer
+                  //- +image('content/engineer.jpg', 'service__pic')
+                .service__item-desc
+                  h3.service__item-desc-title Съемка мероприятий
+                  p.service__item-desc-text Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                  button.info-button(type="button") Подробнее
+          .pagination.pagination--service
+              span.pagination__desc 1 страница из 7
+              ul.pagination__list
+                li.pagination__item.pagination__item--active 1
+                li.pagination__item 2
+                li.pagination__item 3
+                li.pagination__item 4
+                li.pagination__item 5
+                li.pagination__item 6
+                li.pagination__item 7
+        section.section.section--partners
+          .container
+            h2.partners__title Партнеры
+            ul.partners__list
+              li.partners__item
+                a.partners__link(href="#")
+                  +image('icons/divico.png', 'partners__pic')
+              li.partners__item
+                a.partners__link(href="#")
+                  +image('icons/ds.png', 'partners__pic')
+              li.partners__item
+                a.partners__link(href="#")
+                  +image('icons/park.png', 'partners__pic')
+              li.partners__item
+                a.partners__link(href="#")
+                  +image('icons/zvibes.png', 'partners__pic')
+              li.partners__item
+                a.partners__link(href="#")
+                  +image('icons/rosvideo.png', 'partners__pic')
+              li.partners__item
+                a.partners__link(href="#")
+                  +image('icons/zavod.png', 'partners__pic')
+              li.partners__item
+                a.partners__link(href="#")
+                  +image('icons/pixel.png', 'partners__pic')
+              li.partners__item
+                a.partners__link(href="#")
+                  +image('icons/expotv.png', 'partners__pic')
+        footer.footer
+          .container.container--footer
+            a.logo.logo--footer(href="main.html")
+              img.logo-img(src="src/images/content/logo.png" alt="Лого")
+            nav.menu.menu--footer
+              ul.menu__list.menu__list--horizontal
+                li.menu__item
+                  a.menu__link Главная
+                li.menu__item
+                  a.menu__link(href="service.html") Услуги
+                li.menu__item
+                  a.menu__link(href="reviews.html") Отзывы
+            ul.socials
+              li.socials__item
+                a.socials__link(href="#")
+                  +image('icons/telegram.png', 'socials__icon')
+              li.socials__item
+                a.socials__link(href="#")
+                  +image('icons/vkontakte.png', 'socials__icon')
+              li.socials__item
+                a.socials__link(href="#")
+                  +image('icons/facebook.png', 'socials__icon')
+              li.socials__item
+                a.socials__link(href="#")
+                  +image('icons/instagram.png', 'socials__icon')
+            .phone
+              span.phone__text Бесплатный звонок по России
+              a.phone__link(href="tel:+88007003030") 8 800 700 30 30
+

@@ -1,0 +1,34 @@
+.info-button {
+  font-size: 16px;
+  font-family: 'OpenSans', 'Trebuchet MS', sans-serif;
+  letter-spacing: 1.2px;
+  color: $links-color;
+  background: #fff;
+  border-radius: 30px;
+  text-transform: uppercase;
+  padding: 18px 42px;
+  transition: 0.3s;
+  border: 3px solid $links-color;
+  font-weight: bold;
+  &--main {
+    color: #fff;
+    background: $links-color;
+    border: none;
+    &:hover {
+      background: $second-color;
+    }
+  }
+  &--about {
+    color: #fff;
+    background: $links-color;
+    border: none;
+    padding: 18px 32px;
+    &:hover {
+      background: $second-color;
+    }
+  }
+  &:hover {
+    color: #fff;
+    background: $links-color;
+  }
+}

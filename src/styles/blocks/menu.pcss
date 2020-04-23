@@ -1,0 +1,21 @@
+.menu {
+  &__list {
+    display: flex;
+  }
+  &__item {
+    margin-right: 24px;
+    width: 85px;
+    font-size: 14px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    transition: 0.3s;
+    &:hover {
+      color: $second-color;
+    }
+  }
+  &--footer {
+  }
+}

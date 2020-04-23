@@ -1,0 +1,25 @@
+.partners {
+  &__title {
+    margin-bottom: 80px;
+    color: #000;
+    font-size: 48px;
+    font-weight: bold;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 70px;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__pic {
+    opacity: 0.4;
+    transition: 0.3s;
+  }
+  &__item:hover .partners__pic {
+    opacity: 1;
+  }
+}

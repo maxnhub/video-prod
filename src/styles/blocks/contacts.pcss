@@ -1,0 +1,65 @@
+.contacts {
+  font-weight: normal;
+  &__tel {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+
+  }
+  &__dropdown {
+    display: block;
+    color: $links-color;
+    font-size: 14px;
+    position: relative;
+    text-align: right;
+    font-style: normal;
+
+    &:hover .contacts__menu {
+      display: block;
+    }
+  }
+  &__menu {
+    position: absolute;
+    background: #fff;
+    padding: 10px 8px;
+    filter: drop-shadow(3px 3px 3px gray);
+    width: 158px;
+    top: 130%;
+    left: 26%;
+    display: none;
+    border-radius: 4px;
+    padding: 9px 19px;
+    width: 175px;
+  }
+  &__list {
+    text-align: left;
+    position: relative;
+    &:after {
+      content: '';
+      left: 45%;
+      border: 10px solid transparent;
+      width: 0px;
+      height: 0px;
+      border-bottom-color: white;
+      border-top-width: 0px;
+      position: absolute;
+      bottom: 119%;
+    }
+  }
+  &__link {
+    text-decoration: underline;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  &__item {
+    color: black;
+    &--bold {
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+  }
+}
+

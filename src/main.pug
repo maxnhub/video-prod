@@ -1,0 +1,153 @@
+include ./mixins.pug
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(href="https://img.icons8.com/dusk/64/000000/video-trimming.png" rel="shortcut icon" type="image/x-icon")
+    title Video Production | main page
+  body
+    .wrapper
+      .wrapper__content
+        
+          section.section.section--main
+            header.header
+            .container.container--header
+              a.logo(href="#")
+                img.logo-img(src="src/images/content/logo.png" alt="Лого")
+              nav.menu
+                ul.menu__list.menu__list--horizontal
+                  li.menu__item
+                    a.menu__link Главная
+                  li.menu__item
+                    a.menu__link(href="service.html") Услуги
+                  li.menu__item
+                    a.menu__link(href="reviews.html") Отзывы
+              address.contacts
+                a.contacts__tel(href="tel:+88007003030") 8 (800) 700 30 30
+                .contacts__dropdown
+                  a.contacts__link График работы
+                  .contacts__menu
+                    .contacts__list
+                      .contacts__item.contacts__item--bold пн-вс: 09:00-20:00
+                      .contacts__item обед: 14:00-14:30
+            .main__desc
+              h1.main__title Снимем для вас креативное видео
+              span.main__subtitle Креативный видеопродакшн полного цикла
+              button.info-button.info-button--main(type="button") Подробнее
+            .services
+              ul.services__list
+                li.services__item
+                  +image('icons/tv.png', 'services__pic')
+                  span.services__title Реклама
+                  .services__tags
+                    .services__tags-item
+                      span.services__tags-item-text 
+                        | от&nbsp;
+                        b 5&nbsp;
+                        | человек
+                        br
+                        | на проект
+                    .services__tags-item
+                      span.services__tags-item-text 
+                        b 28&nbsp;
+                        | дней работы
+                        br
+                        | в среднем
+                  p.services__item-text Креатив и производство рекламы, документального и корпоративного контента
+                  button.info-button(type="button") Подробнее
+                li.services__item
+                  +image('icons/clapper.png', 'services__pic')
+                  span.services__title Видео-клип
+                  .services__tags
+                    .services__tags-item
+                      span.services__tags-item-text 
+                        | от&nbsp;
+                        b 7&nbsp;
+                        | человек на проект
+                    .services__tags-item
+                      span.services__tags-item-text 
+                        b 21&nbsp;
+                        | день работы в среднем
+                  p.services__item-text Вы решили представиться своим слушателям, пополнить свой творческий багаж качественным видео? Прекрасно!
+                  button.info-button(type="button") Подробнее
+                li.services__item
+                  +image('icons/film.png', 'services__pic')
+                  span.services__title Свадьба
+                  .services__tags
+                    .services__tags-item
+                      span.services__tags-item-text 
+                        | от&nbsp;
+                        b 2&nbsp;
+                        | человек
+                        br
+                        | на проект
+                    .services__tags-item
+                      span.services__tags-item-text 
+                        b 30&nbsp;
+                        | дней работы
+                        br
+                        | в среднем
+                  p.services__item-text Получите живое видео своего самого счастливого дня, которое Вы будете пересматривать снова и снова.
+                  button.info-button(type="button") Подробнее
+          section.section.section--news
+            .container
+              h2.section__title Новости и акции
+              .news__list
+                .news__item.news__item--klip
+                  span.news__item-date Декабрь 2019
+                  span.news__item-title Снимем ваш клип на 50% дешевле
+                  p.news__item-text В честь Новогодних праздников мы раздаем огромные скидки, успейти забронировать даты.
+                .news__item.news__item--wedding
+                  span.news__item-date Декабрь 2019
+                  span.news__item-title Акция для молодоженов 30%
+                  p.news__item-text Успевайте забронировать даты. Пока еще есть места на декабрь. Удачи и всех благ!
+            .pagination
+              span.pagination__desc 1 страница из 7
+              ul.pagination__list
+                li.pagination__item.pagination__item--active 1
+                li.pagination__item 2
+                li.pagination__item 3
+                li.pagination__item 4
+                li.pagination__item 5
+                li.pagination__item 6
+                li.pagination__item 7
+            .container.container--about
+              .about
+                .about__desc
+                  h2.about__title О нас
+                  p.about__text Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                  button.info-button.info-button--about(type="button") Подробнее
+                .about__bg
+          footer.footer
+            .container.container--footer
+              a.logo.logo--footer(href="#")
+                img.logo-img(src="src/images/content/logo.png" alt="Лого")
+              nav.menu.menu--footer
+                ul.menu__list.menu__list--horizontal
+                  li.menu__item
+                    a.menu__link Главная
+                  li.menu__item
+                    a.menu__link(href="service.html") Услуги
+                  li.menu__item
+                    a.menu__link(href="reviews.html") Отзывы
+              ul.socials
+                li.socials__item
+                  a.socials__link(href="#")
+                    +image('icons/telegram.png', 'socials__icon')
+                li.socials__item
+                  a.socials__link(href="#")
+                    +image('icons/vkontakte.png', 'socials__icon')
+                li.socials__item
+                  a.socials__link(href="#")
+                    +image('icons/facebook.png', 'socials__icon')
+                li.socials__item
+                  a.socials__link(href="#")
+                    +image('icons/instagram.png', 'socials__icon')
+              .phone
+                span.phone__text Бесплатный звонок по России
+                a.phone__link(href="tel:+88007003030") 8 800 700 30 30
+
+              
