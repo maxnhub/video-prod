@@ -10,6 +10,10 @@
   transition: 0.3s;
   border: 3px solid $links-color;
   font-weight: bold;
+  &:hover {
+    color: #fff;
+    background: $links-color;
+  }
   &--main {
     color: #fff;
     background: $links-color;
@@ -27,8 +31,14 @@
       background: $second-color;
     }
   }
-  &:hover {
+  &--clear {
+    margin-right: 10px;
+    background: #424242;
     color: #fff;
-    background: $links-color;
+    border: 3px solid transparent;
+    &:hover {
+      background: $second-color;
+    }
   }
+  
 }

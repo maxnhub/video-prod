@@ -13,7 +13,7 @@ html(lang="en")
       .wrapper__content
         section.section.section--header
           header.header
-            .container.container--header
+            .container.container--header.container--header-otherpage
               a.logo(href="main.html")
                 img.logo-img(src="logo.png" alt="Лого")
               nav.menu
@@ -127,7 +127,7 @@ html(lang="en")
               .feedback__contacts
                 input.feedback__name(type="text" name="username" placeholder="Ваше имя" required)
                 input.feedback__social(type="text" name="social" placeholder="Ссылка на профиль VK" required)
-              textarea.feedback__textarea(name="feedback-textarea" placeholder="Напишите свой честный отзыв ;)" rows="5")
+              textarea.feedback__textarea(name="feedback-textarea" placeholder="Напишите свой честный отзыв ;)" rows="5" required)
               .feedback__radio
                 p.feedback__radio-text Какими услугами компании пользуетесь?
                 .feedback__radio-answers
@@ -140,7 +140,7 @@ html(lang="en")
                     .feedback__radio-form-custom
                       span.feedback__radio-form-text Съемки рекламы
                   label.feedback__radio-label
-                    input.feedback__radio-form(type="radio" name="radio")
+                    input.feedback__radio-form(type="radio" name="radio" checked)
                     .feedback__radio-form-custom
                       span.feedback__radio-form-text Съемки свадьбы
                   label.feedback__radio-label
@@ -159,6 +159,9 @@ html(lang="en")
                     input.feedback__radio-form(type="radio" name="radio")
                     .feedback__radio-form-custom
                       span.feedback__radio-form-text Другое
+              .feedback__buttons
+                button.info-button.info-button--clear(type="reset") Очистить
+                button.info-button.info-button--main(type="submit") Отправить
         footer.footer
           .container.container--footer
             a.logo.logo--footer(href="main.html")
