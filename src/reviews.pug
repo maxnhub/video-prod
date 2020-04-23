@@ -1,0 +1,189 @@
+include ./mixins.pug
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(href="https://img.icons8.com/dusk/64/000000/video-trimming.png" rel="shortcut icon" type="image/x-icon")
+    title Video Production | reviews page
+  body
+    .wrapper
+      .wrapper__content
+        section.section.section--header
+          header.header
+            .container.container--header
+              a.logo(href="main.html")
+                img.logo-img(src="src/images/content/logo.png" alt="Лого")
+              nav.menu
+                ul.menu__list.menu__list--horizontal
+                  li.menu__item
+                    a.menu__link Главная
+                  li.menu__item
+                    a.menu__link(href="service.html") Услуги
+                  li.menu__item
+                    a.menu__link(href="reviews.html") Отзывы
+              address.contacts
+                a.contacts__tel(href="tel:+88007003030") 8 (800) 700 30 30
+                .contacts__dropdown
+                  a.contacts__link График работы
+                  .contacts__menu
+                    .contacts__list
+                      .contacts__item.contacts__item--bold пн-вс: 09:00-20:00
+                      .contacts__item обед: 14:00-14:30
+          .container            
+            h1.section__other-title Отзывы
+            .breadcrumbs
+              ul.breadcrumbs__list
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="main.html") Главная
+                li.breadcrumbs__item
+                  a.breadcrumbs__link.breadcrumbs__link--unactive(href="#") Отзывы
+        section.section.section--other
+          .container
+            .reviews
+              ul.reviews__list.reviews__list--left
+                li.reviews__item
+                  .reviews__item-header
+                    .reviews__item-header-visual
+                      .reviews__item-header-avatar
+                        +image('content/ginger.jpg', 'reviews__item-header-pic')
+                      .reviews__item-header-desc
+                        a.reviews__item-header-desc-link(href="#")
+                          span.reviews__item-header-name Иван Петрович
+                          +image('icons/vk-colored.png', 'reviews__item-header-icon')
+                        .reviews__item-header-tag 
+                          span.reviews__item-header-tag-text Съемки клипа
+                  .reviews__item-desc
+                    p.reviews__item-title Съемки клипа
+                    p.reviews__item-text Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                    span.reviews__item-date Ноябрь 2019
+                li.reviews__item
+                  .reviews__item-header
+                    .reviews__item-header-visual
+                      .reviews__item-header-avatar
+                        +image('content/liza.jpg', 'reviews__item-header-pic')
+                      .reviews__item-header-desc
+                        a.reviews__item-header-desc-link(href="#")
+                          span.reviews__item-header-name Лиза Сидорова
+                          +image('icons/vk-colored.png', 'reviews__item-header-icon')
+                        .reviews__item-header-tag Съемка свадьбы
+                  .reviews__item-desc
+                    p.reviews__item-title Свадебная съемка
+                    p.reviews__item-text Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                    span.reviews__item-date Ноябрь 2019
+              ul.reviews__list.reviews__list--right
+                li.reviews__item
+                  .reviews__item-header
+                    .reviews__item-header-visual
+                      .reviews__item-header-avatar
+                        +image('content/girl.jpg', 'reviews__item-header-pic')
+                      .reviews__item-header-desc
+                        a.reviews__item-header-desc-link(href="#")
+                          span.reviews__item-header-name Екатерина Жмых
+                          +image('icons/vk-colored.png', 'reviews__item-header-icon')
+                        .reviews__item-header-tag Студийная съемка
+                  .reviews__item-desc
+                    p.reviews__item-title Очень понравилась работа в студии
+                    p.reviews__item-text Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
+                    span.reviews__item-date Ноябрь 2019
+                li.reviews__item
+                  .reviews__item-header
+                    .reviews__item-header-visual
+                      .reviews__item-header-avatar
+                        +image('content/guy.jpg', 'reviews__item-header-pic')
+                      .reviews__item-header-desc
+                        a.reviews__item-header-desc-link(href="#")
+                          span.reviews__item-header-name Антон Игоревич
+                          +image('icons/vk-colored.png', 'reviews__item-header-icon')
+                        .reviews__item-header-tag Реклама
+                  .reviews__item-desc
+                    p.reviews__item-title Заказывал съемку рекламы. И не пожалел!
+                    p.reviews__item-text Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                    span.reviews__item-date Ноябрь 2019
+          .pagination.pagination--service
+              span.pagination__desc 1 страница из 7
+              ul.pagination__list
+                li.pagination__item.pagination__item--active 1
+                li.pagination__item 2
+                li.pagination__item 3
+                li.pagination__item 4
+                li.pagination__item 5
+                li.pagination__item 6
+                li.pagination__item 7
+        section.section.section--banner
+          .container
+            p.banner__text
+              | Скидка&nbsp;
+              span.banner__text-orange 20%&nbsp;
+              | на
+              br
+              | съемку мероприятий
+        section.section.section--feedback
+          .container
+            h2.section__title2 Оставить отзыв
+            form.feedback(action="")
+              .feedback__contacts
+                input.feedback__name(type="text" name="username" placeholder="Ваше имя" required)
+                input.feedback__social(type="text" name="social" placeholder="Ссылка на профиль VK" required)
+              textarea.feedback__textarea(name="feedback-textarea" placeholder="Напишите свой честный отзыв ;)" rows="5")
+              .feedback__radio
+                p.feedback__radio-text Какими услугами компании пользуетесь?
+                .feedback__radio-answers
+                  label.feedback__radio-label
+                    input.feedback__radio-form(type="radio" name="radio")
+                    .feedback__radio-form-custom
+                      span.feedback__radio-form-text Съемки клипа
+                  label.feedback__radio-label
+                    input.feedback__radio-form(type="radio" name="radio")
+                    .feedback__radio-form-custom
+                      span.feedback__radio-form-text Съемки рекламы
+                  label.feedback__radio-label
+                    input.feedback__radio-form(type="radio" name="radio")
+                    .feedback__radio-form-custom
+                      span.feedback__radio-form-text Съемки свадьбы
+                  label.feedback__radio-label
+                    input.feedback__radio-form(type="radio" name="radio")
+                    .feedback__radio-form-custom
+                      span.feedback__radio-form-text Студийная съемка
+                  label.feedback__radio-label
+                    input.feedback__radio-form(type="radio" name="radio")
+                    .feedback__radio-form-custom
+                      span.feedback__radio-form-text Никакими
+                  label.feedback__radio-label
+                    input.feedback__radio-form(type="radio" name="radio")
+                    .feedback__radio-form-custom
+                      span.feedback__radio-form-text Видео клип
+                  label.feedback__radio-label
+                    input.feedback__radio-form(type="radio" name="radio")
+                    .feedback__radio-form-custom
+                      span.feedback__radio-form-text Другое
+        footer.footer
+          .container.container--footer
+            a.logo.logo--footer(href="main.html")
+              img.logo-img(src="src/images/content/logo.png" alt="Лого")
+            nav.menu.menu--footer
+              ul.menu__list.menu__list--horizontal
+                li.menu__item
+                  a.menu__link Главная
+                li.menu__item
+                  a.menu__link(href="service.html") Услуги
+                li.menu__item
+                  a.menu__link(href="reviews.html") Отзывы
+            ul.socials
+              li.socials__item
+                a.socials__link(href="#")
+                  +image('icons/telegram.png', 'socials__icon')
+              li.socials__item
+                a.socials__link(href="#")
+                  +image('icons/vkontakte.png', 'socials__icon')
+              li.socials__item
+                a.socials__link(href="#")
+                  +image('icons/facebook.png', 'socials__icon')
+              li.socials__item
+                a.socials__link(href="#")
+                  +image('icons/instagram.png', 'socials__icon')
+            .phone
+              span.phone__text Бесплатный звонок по России
+              a.phone__link(href="tel:+88007003030") 8 800 700 30 30

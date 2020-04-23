@@ -1,0 +1,80 @@
+.feedback {
+  &__contacts {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  &__name, &__social {
+    flex: 1;
+    font-size: 18px;
+    color: #000;
+    border: 1px solid transparent;
+    outline: none;
+    &:placeholder {
+      color: #999999;
+    }
+    &:focus {
+      border: 1px solid $second-color;
+    }
+  }
+  &__name {
+    margin-right: 30px;
+    padding: 25px 30px;
+  }
+  &__social {
+    padding: 25px 30px;
+  }
+  &__textarea {
+    margin-bottom: 30px;
+    padding: 25px 30px;
+    border: 1px solid transparent;
+    outline: none;
+    width: 100%;
+    font-size: 18px;
+    color: #000;
+    &:focus {
+      border: 1px solid $second-color;
+    }
+    &:placeholder {
+      color: #999999;
+    }
+  }
+  &__radio {
+    display: flex;
+    &-answers {
+      display: flex;
+      flex-wrap: wrap;
+      flex: 2;
+    }
+    &-text {
+      font-size: 18px;
+      color: #000;
+      margin-right: 10px;
+      flex: 1;
+    }
+    &-label {
+      display: flex;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &-form {
+      appearance: none;
+      &-custom {
+        font-size: 13px;
+        padding: 10px 25px;
+        border-radius: 15px;
+        background: #e7e7e7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        color: #000;
+      }
+      &:checked + .feedback__radio-form-custom {
+        background: #f2d3c8;
+      }
+    }
+  }
+}
