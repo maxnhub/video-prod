@@ -43,6 +43,14 @@ module.exports = (env, argv) => {
         }
     };
 
+    const logo = {
+        test: /logo.(png)$/i,
+        loader: "file-loader",
+        options: {
+            name: "logo.png"
+        }
+    };
+
     const svg = {
         test: /\.svg$/,
         use: [{
@@ -102,7 +110,7 @@ module.exports = (env, argv) => {
             chunkFilename: "[chunkhash].js"
         },
         module: {
-            rules: [pcss, vue, js, files, svg, pug, fonts]
+            rules: [pcss, vue, js, files, svg, pug, fonts, logo]
         },
         resolve: {
             alias: {
