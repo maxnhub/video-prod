@@ -1,12 +1,22 @@
 .reviews {
   display: flex;
+  @include medium {
+    flex-direction: column;
+  }
   &__list {
     display: flex;
     flex-direction: column;
     margin-right: 30px;
     flex: 1;
+    @include phones {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
     &:last-child {
       margin-right: 0;
+      @include phones {
+        margin-bottom: 0;
+      }
     }
   }
   &__item {
@@ -23,6 +33,10 @@
       &-visual {
         display: flex;
         margin-bottom: 35px;
+        @include phones {
+          flex-direction: column;
+          align-items: center;
+        }
       }
       &-avatar {
         width: 140px;
@@ -45,6 +59,9 @@
       &-desc {
         padding-left: 30px;
         padding-top: 30px;
+        @include phones {
+          padding-left: 0;
+        }
         &-link {
           display: flex;
           align-items: center;
@@ -70,6 +87,9 @@
         justify-content: center;
         align-items: center;
         width: fit-content;
+        @include phones {
+          margin: 0 auto;
+        }
       }
     }
     &-desc {

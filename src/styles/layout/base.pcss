@@ -44,9 +44,6 @@ body {
   width: 100%;
   padding: 0 15px;
 
-  @include phones {
-    width: 85%;
-  }
   &--header {
     display: flex;
     justify-content: space-between;
@@ -57,17 +54,29 @@ body {
     &-otherpage {
       margin-bottom: 103px;
     }
+    @include phones {
+      flex-direction: column;
+    }
   }
   &--about {
     padding-top: 255px;
     padding-bottom: 45px;
     border-bottom: 1px solid #ccc;
+    @include medium {
+      padding-top: 140px;
+    }
+    @include tablets {
+      padding-top: 60px;
+    } 
   }
   &--footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 15px;
+    @include medium {
+      flex-direction: column;
+    }
   }
 }
 

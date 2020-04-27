@@ -11,11 +11,10 @@ html(lang="en")
   body
     .wrapper
       .wrapper__content
-        
           section.section.section--main
             header.header
             .container.container--header
-              a.logo(href="#")
+              a.logo.logo--header(href="#")
                 img.logo-img(src="logo.png" alt="Лого")
               nav.menu
                 ul.menu__list.menu__list--horizontal
@@ -38,60 +37,57 @@ html(lang="en")
               span.main__subtitle Креативный видеопродакшн полного цикла
               button.info-button.info-button--main(type="button") Подробнее
             .services
-              ul.services__list
-                li.services__item
-                  +image('icons/tv.png', 'services__pic')
-                  span.services__title Реклама
-                  .services__tags
-                    .services__tags-item
-                      span.services__tags-item-text 
-                        | от&nbsp;
-                        b 5&nbsp;
-                        | человек
-                        br
-                        | на проект
-                    .services__tags-item
-                      span.services__tags-item-text 
-                        b 28&nbsp;
-                        | дней работы
-                        br
-                        | в среднем
-                  p.services__item-text Креатив и производство рекламы, документального и корпоративного контента
-                  button.info-button(type="button") Подробнее
-                li.services__item
-                  +image('icons/clapper.png', 'services__pic')
-                  span.services__title Видео-клип
-                  .services__tags
-                    .services__tags-item
-                      span.services__tags-item-text 
-                        | от&nbsp;
-                        b 7&nbsp;
-                        | человек на проект
-                    .services__tags-item
-                      span.services__tags-item-text 
-                        b 21&nbsp;
-                        | день работы в среднем
-                  p.services__item-text Вы решили представиться своим слушателям, пополнить свой творческий багаж качественным видео? Прекрасно!
-                  button.info-button(type="button") Подробнее
-                li.services__item
-                  +image('icons/film.png', 'services__pic')
-                  span.services__title Свадьба
-                  .services__tags
-                    .services__tags-item
-                      span.services__tags-item-text 
-                        | от&nbsp;
-                        b 2&nbsp;
-                        | человек
-                        br
-                        | на проект
-                    .services__tags-item
-                      span.services__tags-item-text 
-                        b 30&nbsp;
-                        | дней работы
-                        br
-                        | в среднем
-                  p.services__item-text Получите живое видео своего самого счастливого дня, которое Вы будете пересматривать снова и снова.
-                  button.info-button(type="button") Подробнее
+              .container
+                ul.services__list
+                  li.services__item
+                    +image('icons/tv.png', 'services__pic')
+                    span.services__title Реклама
+                    .services__tags
+                      .services__tags-item
+                        span.services__tags-item-text 
+                          | от&nbsp;
+                          b 5&nbsp;
+                          | человек&nbsp;
+                          | на проект
+                      .services__tags-item
+                        span.services__tags-item-text 
+                          b 28&nbsp;
+                          | дней работы&nbsp;
+                          | в среднем
+                    p.services__item-text Креатив и производство рекламы, документального и корпоративного контента
+                    button.info-button(type="button") Подробнее
+                  li.services__item
+                    +image('icons/clapper.png', 'services__pic')
+                    span.services__title Видео-клип
+                    .services__tags
+                      .services__tags-item
+                        span.services__tags-item-text 
+                          | от&nbsp;
+                          b 7&nbsp;
+                          | человек на проект
+                      .services__tags-item
+                        span.services__tags-item-text 
+                          b 21&nbsp;
+                          | день работы в среднем
+                    p.services__item-text Вы решили представиться своим слушателям, пополнить свой творческий багаж качественным видео? Прекрасно!
+                    button.info-button(type="button") Подробнее
+                  li.services__item
+                    +image('icons/film.png', 'services__pic')
+                    span.services__title Свадьба
+                    .services__tags
+                      .services__tags-item
+                        span.services__tags-item-text 
+                          | от&nbsp;
+                          b 2&nbsp;
+                          | человек&nbsp;
+                          | на проект
+                      .services__tags-item
+                        span.services__tags-item-text 
+                          b 30&nbsp;
+                          | дней работы&nbsp;
+                          | в среднем
+                    p.services__item-text Получите живое видео своего самого счастливого дня, которое Вы будете пересматривать снова и снова.
+                    button.info-button(type="button") Подробнее
           section.section.section--news
             .container
               h2.section__title Новости и акции

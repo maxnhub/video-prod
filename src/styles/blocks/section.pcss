@@ -18,22 +18,39 @@
   &--news {
     padding-top: 138px;
     background: url('../images/content/bottom-pic.jpg') 0 395px/contain no-repeat;
+    @include tablets {
+      padding-top: 60px;
+    }
   }
   &--header {
     background: url('../images/content/service-head.png') 0 0/cover no-repeat;
     padding-bottom: 25px;
     & .container--header {
       margin-bottom: 130px;
+      @include phones {
+        margin-bottom: 40px;
+      }
+    }
+    @include medium {
+      background-position: -600px 0;
     }
   }
   &--other {
     background: #fff;
     padding-top: 100px;
     padding-bottom: 90px;
+    @include tablets {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
   }
   &--partners {
     background: #f4f5f5;
     padding: 100px 0;
+    @include tablets {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
   }
   &__other-title {
     font-size: 72px;
@@ -41,6 +58,9 @@
     font-weight: bold;
     margin-bottom: 76px;
     color: #fff;
+    @include phones {
+      margin-bottom: 0;
+    }
   }
   &--banner {
     padding: 130px 0;

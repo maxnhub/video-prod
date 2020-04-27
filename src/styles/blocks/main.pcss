@@ -4,6 +4,9 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 240px;
+    @include tablets {
+      padding-bottom: 100px;
+    }
   }
   &__title {
     font-size: 72px;
@@ -14,6 +17,14 @@
     line-height: 91px;
     margin-bottom: 15px;
     letter-spacing: 1px;
+    @include tablets {
+      font-size: 58px;
+      line-height: 58px;
+    }
+    @include phones {
+      font-size: 36px;
+      line-height: 36px;
+    }
   }
   &__subtitle {
     font-size:18px;

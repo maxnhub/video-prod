@@ -2,9 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @include phones {
+    flex-direction: column;
+  }
   &__desc {
     font-size: 16px;
     margin-right: 25px;
+    @include phones {
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
   }
   &__list {
     display: flex;

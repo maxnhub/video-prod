@@ -10,6 +10,12 @@
   }
 }
 
+@mixin medium() {
+  @media screen and (max-width: $bp-medium) {
+    @content;
+  }
+}
+
 @mixin tablets() {
   @media screen and (max-width: $bp-tablets) {
     @content;

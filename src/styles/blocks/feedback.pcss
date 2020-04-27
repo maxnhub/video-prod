@@ -2,6 +2,9 @@
   &__contacts {
     display: flex;
     margin-bottom: 30px;
+    @include tablets {
+      flex-direction: column;
+    }
   }
   &__name, &__social {
     flex: 1;
@@ -19,6 +22,10 @@
   &__name {
     margin-right: 30px;
     padding: 25px 30px;
+    @include tablets {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
   }
   &__social {
     padding: 25px 30px;
@@ -81,5 +88,9 @@
   &__buttons {
     display: flex;
     justify-content: flex-end;
+    @include tablets {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }

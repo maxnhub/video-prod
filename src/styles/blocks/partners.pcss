@@ -3,6 +3,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 70px;
+    @include tablets {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @include phones {
+      grid-template-columns: 1fr 1fr;
+    }
   }
   &__item {
     display: flex;
